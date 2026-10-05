@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MG Gold Mart — Next.js
 
-## Getting Started
+A responsive static-export website for MG Gold Mart, built with the Next.js App Router, Tailwind CSS, GSAP/ScrollTrigger and Lenis. The visual direction uses an editorial, award-site-inspired layout with a restrained gold, cream and charcoal palette, using the original MG Gold Mart image library.
 
-First, run the development server:
+## Run locally
+
+The project was scaffolded with `npx create-next-app@latest`. Its dependencies are recorded in `package.json` and `package-lock.json`.
 
 ```bash
+# Run this from the legacy PHP project directory.
+cd next-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Validate and export
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
 
-## Learn More
+`next.config.ts` enables `output: "export"` and unoptimized images. A production build generates the deployable static site in `out/`.
+Internal page links use normal document navigation so they work on static hosts without Next.js server-side RSC rewrites.
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/` — Home and gold-buying services
+- `/about-us/` — About MG Gold Mart and its evaluation process
+- `/sell-used-gold/` — Spot cash for old gold
+- `/instant-cash/` — Instant cash service
+- `/relese-pledged-gold/` — Release pledged gold assistance
+- `/gallery/` — Photo gallery
+- `/contact-us/` — Contact information, map and enquiry form
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Original image assets are served from `public/assets/`. The contact form uses a `mailto:` link because a static export has no form-processing backend; messages are not collected by the website.

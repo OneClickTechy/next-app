@@ -1,0 +1,14 @@
+name = "mggoldmart-gold-rate"
+main = "worker.js"
+compatibility_date = "2024-03-20"
+
+# Routes will be configured automatically when you deploy.
+# To deploy: npx wrangler deploy
+
+[vars]
+# You can set a manual override rate if the API fails, e.g. "7250"
+MANUAL_22K_RATE = ""
+
+# IMPORTANT: Do not store actual secret keys here.
+# For API keys, run the following command in your terminal:
+# npx wrangler secret put GOLD_API_KEY
