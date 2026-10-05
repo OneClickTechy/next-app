@@ -2,13 +2,25 @@ import Image from "next/image";
 import { ArrowDown, ArrowRight, ArrowUpRight, Banknote, Gem, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import AnimatedStat from "@/components/AnimatedStat";
 import IntroCarousel from "@/components/IntroCarousel";
-import { pageMetadata } from "@/lib/metadata";
+import type { Metadata } from 'next';
 import { serviceItems, site } from "@/lib/site";
 import Link from "next/link";
 
-export const metadata = {
-  ...pageMetadata("Old Gold Buyers in Coimbatore", site.description, "/"),
-  title: "Old Gold Buyers in Coimbatore | MG Gold Mart",
+export const metadata: Metadata = {
+  title: 'Best Old Gold Buyers in Coimbatore | Cash for Gold - MG Gold Mart',
+  description: 'Looking for the best gold buyer near me? MG Gold Mart in Coimbatore offers instant cash for gold, live market rates, and pledged gold release services.',
+  keywords: ["best gold buyer near me", "cash for gold shop in Coimbatore", "highest price for second hand gold", "old gold buyers Coimbatore", "sell gold online"],
+  alternates: {
+    canonical: 'https://mggoldmart.com/',
+  },
+  openGraph: {
+    title: 'Best Old Gold Buyers in Coimbatore | MG Gold Mart',
+    description: 'Looking for the best gold buyer near me? MG Gold Mart in Coimbatore offers instant cash for gold, live market rates, and pledged gold release services.',
+    url: 'https://mggoldmart.com/',
+    siteName: 'MG Gold Mart',
+    images: [{ url: '/assets/images/about-us.jpg' }],
+    type: 'website',
+  },
 };
 
 const benefits = [
@@ -24,8 +36,32 @@ const process = [
 ];
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I find the best gold buyer near me in Coimbatore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MG Gold Mart is located in Gandhipuram, Coimbatore. We are trusted old gold buyers offering instant cash for gold at the highest price for second hand gold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer the highest price for second hand gold?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we evaluate your gold transparently based on live market rates to ensure you get the highest price for your second-hand gold jewelry."
+        }
+      }
+    ]
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section data-home-hero className="hero-home">
         {/* ambient background */}
         <div className="hero-home-bg" aria-hidden="true">

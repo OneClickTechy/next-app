@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import FloatingActionButtons from "@/components/FloatingActionButtons";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import LocalBusinessJsonLd from "@/components/seo/JsonLd";
 import { site } from "@/lib/site";
 
 const siteUrl = "https://mggoldmart.com";
@@ -14,16 +15,20 @@ const siteUrl = "https://mggoldmart.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Old Gold Buyers in Coimbatore | MG Gold Mart",
+    default: "Best Old Gold Buyers in Coimbatore | MG Gold Mart",
     template: "%s | MG Gold Mart",
   },
-  description: site.description,
+  description: "Looking for the best gold buyer near me? MG Gold Mart in Coimbatore offers instant cash for gold, live market rates, and pledged gold release services.",
+  keywords: ["best gold buyer near me", "cash for gold shop in Coimbatore", "highest price for second hand gold", "old gold buyers Coimbatore", "sell gold online", "release pledged gold"],
   applicationName: "MG Gold Mart",
   authors: [{ name: "MG Gold Mart" }],
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
-    title: "Old Gold Buyers in Coimbatore | MG Gold Mart",
-    description: site.description,
+    title: "Best Old Gold Buyers in Coimbatore | MG Gold Mart",
+    description: "Looking for the best gold buyer near me? MG Gold Mart in Coimbatore offers instant cash for gold, live market rates, and pledged gold release services.",
     url: siteUrl,
     siteName: "MG Gold Mart",
     locale: "en_IN",
@@ -32,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Old Gold Buyers in Coimbatore | MG Gold Mart",
-    description: site.description,
+    title: "Best Old Gold Buyers in Coimbatore | MG Gold Mart",
+    description: "Get instant cash for gold at live market rates with MG Gold Mart in Coimbatore.",
     images: ["/assets/images/about-us.jpg"],
   },
   icons: { icon: "/assets/images/favicon.png" },
@@ -43,6 +48,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body>
+        <LocalBusinessJsonLd />
         <SmoothScrolling />
         <ScrollAnimations>
           <Header />
