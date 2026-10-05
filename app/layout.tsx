@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import Header from "@/components/Header";
+import AppCTA from "@/components/AppCTA";
 import Footer from "@/components/Footer";
 import FloatingActionButtons from "@/components/FloatingActionButtons";
 import SmoothScrolling from "@/components/SmoothScrolling";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <ScrollAnimations>
           <Header />
           {children}
+          <AppCTA />
           <Footer />
           <FloatingActionButtons />
         </ScrollAnimations>

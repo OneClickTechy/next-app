@@ -43,13 +43,25 @@ export default function Header() {
           })}
         </nav>
 
-        <a href={`tel:${site.phone}`} className="header-call hidden h-10 items-center gap-2 bg-[#f4bf2f] px-4 text-[11px] font-bold transition-colors hover:bg-[#ffda67] lg:flex">
-          <Phone size={14} /><span>Call {site.displayPhone}</span><ArrowUpRight size={14} />
-        </a>
+        <div className="flex items-center gap-3 lg:gap-5">
+          <div className="group relative hidden py-7 lg:block">
+            <button className="flex h-10 items-center gap-1 bg-[#1a1a1a] px-4 text-[11px] font-bold text-white transition-colors hover:bg-black">
+              GET APP <ChevronDown size={14} />
+            </button>
+            <div className="invisible absolute right-0 top-[68px] w-48 translate-y-2 border border-black/5 bg-white p-2 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              <a href="https://play.google.com/store/apps/details?id=com.atts.mgGoldMart&pcampaignid=web_share" target="_blank" rel="noreferrer" className="block px-3 py-2.5 text-sm text-[#42423a] hover:bg-[#fff5d9] hover:text-[#790019]">Android (Play Store)</a>
+              <a href="https://apps.apple.com/my/app/mg-gold-mart/id6756960715" target="_blank" rel="noreferrer" className="block px-3 py-2.5 text-sm text-[#42423a] hover:bg-[#fff5d9] hover:text-[#790019]">iOS (App Store)</a>
+            </div>
+          </div>
 
-        <button type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)} className="flex h-11 w-11 items-center justify-center border border-black/10 text-[#30000b] lg:hidden">
-          {menuOpen ? <X size={21} /> : <Menu size={21} />}
-        </button>
+          <a href={`tel:${site.phone}`} className="header-call hidden h-10 items-center gap-2 bg-[#f4bf2f] px-4 text-[11px] font-bold transition-colors hover:bg-[#ffda67] lg:flex">
+            <Phone size={14} /><span>Call {site.displayPhone}</span><ArrowUpRight size={14} />
+          </a>
+
+          <button type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)} className="flex h-11 w-11 items-center justify-center border border-black/10 text-[#30000b] lg:hidden">
+            {menuOpen ? <X size={21} /> : <Menu size={21} />}
+          </button>
+        </div>
       </div>
 
       {menuOpen && (
@@ -65,7 +77,16 @@ export default function Header() {
             ) : (
               <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="border-b border-black/5 py-3.5 text-sm font-semibold">{item.label}</a>
             ))}
-            <a href={`tel:${site.phone}`} className="button-gold mt-5 w-full"><Phone size={16} /> Call Now: {site.displayPhone}</a>
+            
+            <div className="mt-6 flex flex-col gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#77776f]">Download App</span>
+              <div className="flex gap-2">
+                <a href="https://play.google.com/store/apps/details?id=com.atts.mgGoldMart&pcampaignid=web_share" target="_blank" rel="noreferrer" className="flex-1 rounded border border-black/10 bg-white py-2 text-center text-xs font-semibold hover:bg-gray-50">Play Store</a>
+                <a href="https://apps.apple.com/my/app/mg-gold-mart/id6756960715" target="_blank" rel="noreferrer" className="flex-1 rounded border border-black/10 bg-white py-2 text-center text-xs font-semibold hover:bg-gray-50">App Store</a>
+              </div>
+            </div>
+
+            <a href={`tel:${site.phone}`} className="button-gold mt-6 w-full"><Phone size={16} /> Call Now: {site.displayPhone}</a>
           </nav>
         </div>
       )}
