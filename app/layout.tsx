@@ -33,15 +33,15 @@ export const metadata: Metadata = {
     siteName: "MG Gold Mart",
     locale: "en_IN",
     type: "website",
-    images: [{ url: "/assets/images/about-us.jpg", width: 1200, height: 630, alt: "MG Gold Mart in Coimbatore" }],
+    images: [{ url: "/assets/images/mg-gold-mart.png", width: 1200, height: 630, alt: "MG Gold Mart in Coimbatore" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Old Gold Buyers in Coimbatore | MG Gold Mart",
     description: "Get instant cash for gold at live market rates with MG Gold Mart in Coimbatore.",
-    images: ["/assets/images/about-us.jpg"],
+    images: ["/assets/images/mg-gold-mart.png"],
   },
-  icons: { icon: "/assets/images/favicon.png" },
+  appleWebApp: { title: "MG Gold Mart" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
