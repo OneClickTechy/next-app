@@ -18,8 +18,8 @@ export default function SellUsedGoldClientPage() {
     // Hero entrance
     const tl = gsap.timeline();
     tl.fromTo(".sug-hero-kicker", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
-      .fromTo(".sug-hero-title", { yPercent: 140 }, { yPercent: 0, duration: 1.2, ease: "expo.out", stagger: 0.1 }, "-=0.6")
-      .fromTo(".sug-hero-img", { scale: 1.1, opacity: 0, clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }, { scale: 1, opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1.6, ease: "expo.out" }, "<0.2")
+      .fromTo(".sug-hero-title", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1, ease: "expo.out", stagger: 0.1 }, "-=0.6")
+      .fromTo(".sug-hero-img", { scale: 1.05, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2, ease: "power3.out" }, "-=1")
       .fromTo(".sug-hero-copy", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, "-=0.8");
 
     // Sticky Scroll Section
@@ -75,9 +75,9 @@ export default function SellUsedGoldClientPage() {
               Spot cash for gold
             </span>
             <h1 className="display-font text-[#30000b] text-[clamp(3.5rem,7vw,7.5rem)] leading-[0.85] font-medium tracking-tight mb-8">
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block sug-hero-title">Your gold,</span></div>
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block sug-hero-title">valued</span></div>
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block sug-hero-title"><em>with respect.</em></span></div>
+              <span className="inline-block sug-hero-title mr-4">Your gold,</span>
+              <span className="inline-block sug-hero-title mr-4">valued</span>
+              <span className="inline-block sug-hero-title"><em>with respect.</em></span>
             </h1>
             <p className="sug-hero-copy text-[#77776f] text-[1.1rem] leading-relaxed max-w-md">
               Whether it’s old, broken, mismatched, or simply no longer your style — your gold still holds intrinsic value. We offer a transparent assessment you can watch from start to finish.

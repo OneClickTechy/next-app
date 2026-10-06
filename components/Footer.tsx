@@ -46,7 +46,17 @@ export default function Footer() {
           <div data-reveal>
             <h2 className="eyebrow !text-[#f4bf2f]">Visit us</h2>
             <div className="mt-5 space-y-4 text-sm leading-6 text-white/60">
-              <p className="flex gap-3"><MapPin size={17} className="mt-1 shrink-0 text-[#f4bf2f]" />{site.address}</p>
+              <div className="flex gap-3">
+                <MapPin size={17} className="mt-1 shrink-0 text-[#f4bf2f]" />
+                <div className="space-y-4">
+                  {site.branches.map((branch) => (
+                    <div key={branch.name}>
+                      <span className="font-semibold text-white/80">{branch.name}</span>
+                      <p className="mt-1 text-white/50">{branch.address}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
               <p className="flex gap-3"><Phone size={16} className="mt-1 shrink-0 text-[#f4bf2f]" /><span className="flex flex-wrap gap-x-2">{site.phones.map((phone, index) => <span key={phone.href}><a className="hover:text-white" href={phone.href}>{phone.label}</a>{index < site.phones.length - 1 ? "," : ""}</span>)}</span></p>
               <p className="flex gap-3"><Mail size={16} className="mt-1 shrink-0 text-[#f4bf2f]" /><a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a></p>
             </div>
@@ -64,11 +74,18 @@ export default function Footer() {
 
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div data-reveal className="flex flex-col justify-between">
-            <div><p className="eyebrow !text-[#f4bf2f]">Find our store</p><p className="mt-4 text-sm leading-6 text-white/55">Come by for a clear, no-pressure evaluation at our Gandhipuram store.</p></div>
-            <p className="mt-8 text-xs text-white/40">© {new Date().getFullYear()} MG Gold Mart. All rights reserved.</p>
+            <div><p className="eyebrow !text-[#f4bf2f]">Find our stores</p><p className="mt-4 text-sm leading-6 text-white/55">Come by for a clear, no-pressure evaluation at our Gandhipuram or Saibaba Colony stores.</p></div>
+            <div className="mt-8 text-xs text-white/40 space-y-2">
+              <p>© {new Date().getFullYear()} MG Gold Mart. All rights reserved.</p>
+              <p>Design & Develop <a href="https://bindzo8.com/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-[#f4bf2f] transition-colors">https://bindzo8.com/</a></p>
+            </div>
           </div>
-          <div data-reveal className="h-60 overflow-hidden border border-white/10 bg-white/5 lg:h-52">
-            <iframe title="MG Gold Mart location in Coimbatore" src={site.mapEmbed} className="h-full w-full grayscale transition-[filter] duration-500 hover:grayscale-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+          <div data-reveal className="grid sm:grid-cols-2 gap-4 h-[400px] sm:h-60 lg:h-52">
+            {site.branches.map((branch) => (
+              <div key={branch.name} className="h-full overflow-hidden border border-white/10 bg-white/5">
+                <iframe title={branch.name} src={branch.mapEmbed} className="h-full w-full grayscale transition-[filter] duration-500 hover:grayscale-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+              </div>
+            ))}
           </div>
         </div>
       </div>

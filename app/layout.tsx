@@ -8,6 +8,7 @@ import FloatingActionButtons from "@/components/FloatingActionButtons";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import LocalBusinessJsonLd from "@/components/seo/JsonLd";
+import LiveGoldRate from "@/components/LiveGoldRate";
 
 
 const siteUrl = "https://mggoldmart.com";
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           <AppCTA />
           <Footer />
           <FloatingActionButtons />
+          <LiveGoldRate />
         </ScrollAnimations>
       </body>
     </html>

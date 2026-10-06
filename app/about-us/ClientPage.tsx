@@ -18,8 +18,8 @@ export default function AboutClientPage() {
     // Hero entrance
     const tl = gsap.timeline();
     tl.fromTo(".au-hero-kicker", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" })
-      .fromTo(".au-hero-title span", { yPercent: 140 }, { yPercent: 0, duration: 1.2, ease: "expo.out", stagger: 0.1 }, "-=0.6")
-      .fromTo(".au-hero-img", { scale: 1.1, opacity: 0, clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }, { scale: 1, opacity: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1.6, ease: "expo.out" }, "<0.2")
+      .fromTo(".au-hero-title span", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1, ease: "expo.out", stagger: 0.1 }, "-=0.6")
+      .fromTo(".au-hero-img", { scale: 1.05, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2, ease: "power3.out" }, "-=1")
       .fromTo(".au-hero-copy", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.8");
 
     // Fade up sections
@@ -87,9 +87,9 @@ export default function AboutClientPage() {
               A promise you can see
             </span>
             <h1 className="au-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,8rem)] leading-[0.85] font-medium tracking-tight mb-8">
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block">Trust is</span></div>
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block">built in the</span></div>
-              <div className="overflow-hidden py-4 -my-4"><span className="inline-block"><em>details.</em></span></div>
+              <span className="inline-block mr-4">Trust is</span>
+              <span className="inline-block mr-4">built in the</span>
+              <span className="inline-block"><em>details.</em></span>
             </h1>
             <p className="au-hero-copy text-[#77776f] text-[1.2rem] leading-relaxed max-w-md">
               Honest conversations, transparent evaluation, and thoughtful service for every customer in Coimbatore. We redefine what it means to sell your gold.

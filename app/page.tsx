@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUpRight, Banknote, Gem, Phone, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, Banknote, Gem, Phone, ShieldCheck, Sparkles, Smartphone } from "lucide-react";
 import AnimatedStat from "@/components/AnimatedStat";
 import IntroCarousel from "@/components/IntroCarousel";
 import GoldCalculator from "@/components/GoldCalculator";
@@ -170,11 +170,11 @@ export default function HomePage() {
             <span className="eyebrow">What brings you in?</span>
             <h2 className="display-font">A good next step<br /><em>starts right here.</em></h2>
           </div>
-          <p data-reveal>Three ways we can help. One thing they share: a clear process, and space for you to decide.</p>
+          <p data-reveal>Four core services. One thing they share: a clear process, and space for you to decide.</p>
         </div>
         <div data-stagger className="service-editorial-grid">
           {serviceItems.map((item, index) => {
-            const Icon = index === 0 ? Sparkles : index === 1 ? Banknote : ShieldCheck;
+            const Icon = index === 0 ? Sparkles : index === 1 ? Banknote : index === 2 ? ShieldCheck : Smartphone;
             return (
               <a data-stagger-item key={item.href} href={item.href} className={`editorial-service editorial-service-${index + 1}`}>
                 <div className="editorial-service-image">

@@ -58,8 +58,15 @@ export default function ContactClientPage() {
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div className="cu-contact-card bg-white p-8 rounded-3xl border border-black/5 shadow-sm hover:shadow-md transition-shadow text-left">
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f4bf2f]/10 text-[#790019] mb-6"><MapPin size={20} /></span>
-            <h3 className="text-xl font-medium text-[#30000b] mb-2">Visit Us</h3>
-            <p className="text-[#77776f] text-sm leading-relaxed mb-6 h-10">{site.address}</p>
+            <h3 className="text-xl font-medium text-[#30000b] mb-4">Visit Us</h3>
+            <div className="text-[#77776f] text-sm leading-relaxed mb-6 space-y-4">
+              {site.branches.map((branch) => (
+                <div key={branch.name}>
+                  <p className="font-semibold text-[#30000b] mb-1">{branch.name}</p>
+                  <p>{branch.address}</p>
+                </div>
+              ))}
+            </div>
             <a href="https://maps.google.com/?q=MG+Gold+Mart+Coimbatore" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-[#30000b] hover:text-[#790019] transition-colors">
               Get Directions <ArrowUpRight size={16} />
             </a>
@@ -107,24 +114,28 @@ export default function ContactClientPage() {
             </div>
 
             {/* Immersive Map Area */}
-            <div className="cu-fade-up relative h-[600px] lg:h-auto rounded-3xl overflow-hidden shadow-lg border border-black/5">
-              <div className="absolute top-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm z-10 flex justify-between items-center">
-                <div>
-                  <h3 className="font-bold text-[#30000b]">MG Gold Mart</h3>
-                  <p className="text-sm text-[#77776f]">Gandhipuram, Coimbatore</p>
+            <div className="cu-fade-up flex flex-col gap-8">
+              {site.branches.map((branch) => (
+                <div key={branch.name} className="relative h-[400px] lg:h-[450px] rounded-3xl overflow-hidden shadow-lg border border-black/5">
+                  <div className="absolute top-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm z-10 flex justify-between items-center">
+                    <div>
+                      <h3 className="font-bold text-[#30000b]">{branch.name}</h3>
+                      <p className="text-sm text-[#77776f] line-clamp-1 pr-4">{branch.address}</p>
+                    </div>
+                    <a href={`https://maps.google.com/?q=${encodeURIComponent(branch.name + ' Coimbatore')}`} target="_blank" rel="noreferrer" className="w-12 h-12 shrink-0 bg-[#790019] rounded-full flex items-center justify-center text-white hover:bg-[#30000b] transition-colors">
+                      <ArrowUpRight size={20} />
+                    </a>
+                  </div>
+                  <iframe 
+                    title={`Map to ${branch.name}`} 
+                    src={branch.mapEmbed} 
+                    className="absolute inset-0 w-full h-full grayscale-[0.5] hover:grayscale-0 transition-all duration-700" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade" 
+                    allowFullScreen 
+                  />
                 </div>
-                <a href="https://maps.google.com/?q=MG+Gold+Mart+Coimbatore" target="_blank" rel="noreferrer" className="w-12 h-12 bg-[#790019] rounded-full flex items-center justify-center text-white hover:bg-[#30000b] transition-colors">
-                  <ArrowUpRight size={20} />
-                </a>
-              </div>
-              <iframe 
-                title="Map to MG Gold Mart in Coimbatore" 
-                src={site.mapEmbed} 
-                className="absolute inset-0 w-full h-full grayscale-[0.5] hover:grayscale-0 transition-all duration-700" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade" 
-                allowFullScreen 
-              />
+              ))}
             </div>
 
           </div>
