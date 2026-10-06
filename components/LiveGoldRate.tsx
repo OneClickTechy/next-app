@@ -39,7 +39,7 @@ export default function LiveGoldRate() {
           return;
         }
 
-        const res = await fetch(workerUrl);
+        const res = await fetch(workerUrl, { cache: "no-store" });
         if (res.ok) {
           const data = (await res.json()) as GoldRateResponse;
           if (data.success && data.rates) {
