@@ -8,7 +8,7 @@ import FloatingActionButtons from "@/components/FloatingActionButtons";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import LocalBusinessJsonLd from "@/components/seo/JsonLd";
-import { site } from "@/lib/site";
+
 
 const siteUrl = "https://mggoldmart.com";
 

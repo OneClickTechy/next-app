@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const slides = [
   {
@@ -42,23 +44,32 @@ export default function IntroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
+  const container = useRef<HTMLDivElement>(null);
   const activeSlide = slides[activeIndex];
 
   useEffect(() => {
-    if (isPaused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (isPaused) return;
 
     const timer = window.setInterval(() => {
       setActiveIndex((index) => (index + 1) % slides.length);
-    }, 6000);
+    }, 4000);
 
     return () => window.clearInterval(timer);
   }, [isPaused]);
+
+  useGSAP(() => {
+    gsap.fromTo(
+      ".intro-slide-content",
+      { opacity: 0, y: 15 },
+      { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+    );
+  }, { dependencies: [activeIndex], scope: container });
 
   const showPrevious = () => setActiveIndex((index) => (index - 1 + slides.length) % slides.length);
   const showNext = () => setActiveIndex((index) => (index + 1) % slides.length);
 
   return (
-    <section className="editorial-intro">
+    <section className="editorial-intro" ref={container}>
       <div
         className="editorial-intro-inner"
         onMouseEnter={() => setIsPaused(true)}

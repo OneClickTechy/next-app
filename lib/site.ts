@@ -25,7 +25,14 @@ export const navigation = [
       { label: "Release Pledged Gold", href: "/relese-pledged-gold/" },
     ],
   },
-  { label: "Gallery", href: "/gallery/" },
+  {
+    label: "Resources",
+    href: "/gold-calculator/",
+    children: [
+      { label: "Gold Calculator", href: "/gold-calculator/" },
+      { label: "FAQs", href: "/faq/" },
+    ],
+  },
   { label: "Contact", href: "/contact-us/" },
 ];
 

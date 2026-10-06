@@ -13,6 +13,11 @@ const quickLinks = [
   { title: "Contact", href: "/contact-us/" },
 ];
 
+const legalLinks = [
+  { title: "Terms & Conditions", href: "/terms-and-conditions/" },
+  { title: "Privacy Policy", href: "/privacy-policy/" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#30000b] text-white">
@@ -47,6 +52,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        
+        <div className="grid gap-8 border-b border-white/10 pb-14 mb-14 lg:grid-cols-2">
+          <div data-reveal>
+            <h2 className="eyebrow !text-[#f4bf2f]">Legal</h2>
+            <ul className="mt-5 flex flex-wrap gap-x-8 gap-y-3">
+              {legalLinks.map((link) => <li key={link.href}><a href={link.href} className="text-sm text-white/60 transition-colors hover:text-[#ffda67]">{link.title}</a></li>)}
+            </ul>
+          </div>
+        </div>
+
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div data-reveal className="flex flex-col justify-between">
             <div><p className="eyebrow !text-[#f4bf2f]">Find our store</p><p className="mt-4 text-sm leading-6 text-white/55">Come by for a clear, no-pressure evaluation at our Gandhipuram store.</p></div>

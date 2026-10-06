@@ -95,7 +95,7 @@ async function fetchFromYahooFinanceJson() {
   return null;
 }
 
-export default {
+const worker = {
   async fetch(request, env, ctx) {
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
@@ -208,3 +208,5 @@ export default {
     return response;
   }
 };
+
+export default worker;

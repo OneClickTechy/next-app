@@ -2,6 +2,10 @@ import Image from "next/image";
 import { ArrowDown, ArrowRight, ArrowUpRight, Banknote, Gem, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import AnimatedStat from "@/components/AnimatedStat";
 import IntroCarousel from "@/components/IntroCarousel";
+import GoldCalculator from "@/components/GoldCalculator";
+import FAQSection from "@/components/FAQSection";
+import Testimonials from "@/components/Testimonials";
+import AcceptedItems from "@/components/AcceptedItems";
 import type { Metadata } from 'next';
 import { serviceItems, site } from "@/lib/site";
 import Link from "next/link";
@@ -135,8 +139,6 @@ export default function HomePage() {
                 <path d="M0 32 H100 M22 0 L35 32 M78 0 L65 32 M50 0 L35 32 M50 0 L65 32 M35 32 L50 100 M65 32 L50 100 M50 32 V100" />
               </svg>
             </div>
-
-            {/* keep your existing .hero-badge and .hero-card blocks here unchanged */}
           </div>
 
           <a data-hero-note href="#our-services" className="hero-scroll-note">
@@ -149,42 +151,6 @@ export default function HomePage() {
           </span>
         </div>
       </section>
-      {/* <section data-home-hero className="hero-home">
-        <div data-hero-image className="hero-home-image">
-          <Image
-            src="/assets/images/main-slider/image-1.jpg"
-            alt="A hand offering gold jewellery for a clear valuation"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 72vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="hero-home-shade" />
-        <div className="hero-home-inner">
-          <div className="hero-copy">
-            <p data-hero-kicker className="hero-kicker"><span /> Trusted gold buyers · Coimbatore</p>
-            <h1 className="hero-title display-font">
-              <span className="hero-title-line"><span data-hero-line>Gold,</span></span>
-              <span className="hero-title-line"><span data-hero-line className="hero-title-italic">with a new purpose.</span></span>
-            </h1>
-            <p data-hero-copy className="hero-description">
-              On-the-spot cash for old gold, with an honest valuation you can see. Need to release pledged gold? Let&apos;s talk.
-            </p>
-            <div className="hero-actions">
-              <a data-hero-action href={`tel:${site.phone}`} className="button-gold"><Phone size={16} /> Call {site.displayPhone}</a>
-              <a data-hero-action href="/sell-used-gold/" className="hero-text-link">Explore gold services <ArrowUpRight size={16} /></a>
-            </div>
-          </div>
-          <div className="hero-aside">
-            <span className="hero-aside-line" />
-            <p>Good decisions<br />start with clarity.</p>
-            <span className="hero-aside-place">GANDHIPURAM · COIMBATORE</span>
-          </div>
-          <a data-hero-note href="#our-services" className="hero-scroll-note"><span>Scroll to discover</span><ArrowDown size={15} /></a>
-          <span className="hero-index">11°00&apos;59.4&quot;N&nbsp; 76°58&apos;18.5&quot;E</span>
-        </div>
-      </section> */}
 
       <div className="ticker" aria-label="Gold buying in Coimbatore">
         <div className="ticker-track">
@@ -227,6 +193,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <AcceptedItems />
+
       <section className="trust-editorial">
         <div className="trust-image-wrap" data-reveal>
           <Image src="/assets/images/about-us2.jpg" alt="Gold being carefully examined at MG Gold Mart" fill sizes="(max-width: 900px) 100vw, 48vw" className="object-cover" data-parallax />
@@ -249,6 +217,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoldCalculator />
+
       <section className="process-editorial">
         <div className="process-header">
           <div data-reveal><span className="eyebrow">Nothing complicated</span><h2 className="display-font">Three steps.<br /><em>That&apos;s the whole story.</em></h2></div>
@@ -266,6 +236,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <Testimonials />
+
       <section className="numbers-editorial">
         <div data-reveal className="numbers-heading">
           <span className="eyebrow eyebrow-light">Rooted in Coimbatore</span>
@@ -282,6 +254,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <FAQSection />
 
       <section className="home-cta-wrap">
         <div className="home-cta">

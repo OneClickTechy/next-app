@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ServicePage from "@/components/ServicePage";
+import ReleasePledgedGoldClientPage from './ClientPage';
 
 export const metadata: Metadata = {
   title: 'Release Pledged Gold from Bank | Pay Off Gold Loan - MG Gold Mart',
@@ -19,48 +19,5 @@ export const metadata: Metadata = {
 };
 
 export default function ReleasePledgedGoldPage() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How to release pledged gold from a bank?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bring your pledge receipt to MG Gold Mart. We can help you pay off your gold loan and buy back your pledged gold transparently."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you help release mortgage gold in Coimbatore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we assist in releasing mortgage gold from banks and NBFCs. Our team evaluates your pledge receipt and explains the options without pressure."
-        }
-      }
-    ]
-  };
-
-  return (
-    <>
-      <ServicePage
-        eyebrow="Release pledged gold"
-        title="Release Pledged Gold from Bank & NBFCs."
-        intro="If your gold is pledged with a bank or pawnbroker, understanding the next step can be difficult. Talk to our team about your situation and the options available to you."
-        image="/assets/images/pledged.jpg"
-        imageAlt="Pledged gold jewelry and pawn tickets ready to be released"
-        points={[
-          "Get a personal conversation about your pledged gold.",
-          "Bring your pledge receipt and related documents when you visit.",
-          "We explain any available options and associated terms clearly.",
-          "You decide what works best for you, with no pressure.",
-        ]}
-        processTitle="Start with a conversation."
-        processDescription="Bring your pledge details to our store so our team can understand your circumstances. Any release arrangement depends on the lender's terms and the details of your pledge."
-        pageIndex="03"
-      />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-    </>
-  );
+  return <ReleasePledgedGoldClientPage />;
 }

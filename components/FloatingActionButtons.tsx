@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent } from "react";
 import { MessageCircle, Phone, X, Send, ChevronRight } from "lucide-react";
 import { site } from "@/lib/site";
 
@@ -9,10 +9,11 @@ export default function FloatingActionButtons() {
   const [message, setMessage] = useState("");
   const [time, setTime] = useState("");
 
-  useEffect(() => {
+  const handleOpenChat = () => {
     const now = new Date();
     setTime(now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
-  }, [isChatOpen]);
+    setIsChatOpen(true);
+  };
 
   const handleSend = (text: string) => {
     if (!text.trim()) return;
@@ -118,7 +119,7 @@ export default function FloatingActionButtons() {
       <div className="flex flex-col items-end gap-3">
         {!isChatOpen && (
           <button
-            onClick={() => setIsChatOpen(true)}
+            onClick={handleOpenChat}
             aria-label="Open chat"
             className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1e293b] text-[#25d366] shadow-xl border border-black/10 transition-transform hover:scale-105"
           >
