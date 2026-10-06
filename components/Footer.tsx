@@ -77,7 +77,7 @@ export default function Footer() {
             <div><p className="eyebrow !text-[#f4bf2f]">Find our stores</p><p className="mt-4 text-sm leading-6 text-white/55">Come by for a clear, no-pressure evaluation at our Gandhipuram or Saibaba Colony stores.</p></div>
             <div className="mt-8 text-xs text-white/40 space-y-2">
               <p>© {new Date().getFullYear()} MG Gold Mart. All rights reserved.</p>
-              <p>Design & Develop <a href="https://bindzo8.com/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-[#f4bf2f] transition-colors">https://bindzo8.com/</a></p>
+              <p>Design & Develop by <a href="https://bindzo8.com/" target="_blank" rel="noreferrer" className="text-white/60 hover:text-[#f4bf2f] transition-colors">Bindzo8</a></p>
             </div>
           </div>
           <div data-reveal className="grid sm:grid-cols-2 gap-4 h-[400px] sm:h-60 lg:h-52">

@@ -14,10 +14,11 @@ export default function AppCTA() {
 
         {/* Center Content */}
         <div data-reveal className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left lg:pl-4">
-          <span className="eyebrow text-[#f4bf2f] mb-4 text-xs font-bold tracking-[0.2em] uppercase">The MG Gold Mart App</span>
-          <h2 className="display-font text-4xl font-bold md:text-5xl lg:text-[54px] lg:leading-[1.1]">DigiGold, in your pocket.</h2>
+          <span className="eyebrow text-[#f4bf2f] mb-4 text-xs font-bold tracking-[0.2em] uppercase">The MG Gold Mart App (MG கோல்ட் மார்ட் ஆப்)</span>
+          <h2 className="display-font text-4xl font-bold md:text-5xl lg:text-[54px] lg:leading-[1.1]">DigiGold, in your pocket.<br/><span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-white/50 mt-4 block leading-tight">டிஜிகோல்ட், உங்கள் பாக்கெட்டில்.</span></h2>
           <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-[#f8f6f0]/70">
             Download our official app to check live gold rates, manage your DigiGold investments, and connect with our experts instantly. Available for both Android and iOS.
+            <br/><br/>நேரடி தங்க விகிதங்களைச் சரிபார்க்கவும், உங்கள் டிஜிகோல்ட் முதலீடுகளை நிர்வகிக்கவும், எங்கள் நிபுணர்களுடன் உடனடியாக இணைக்கவும் எங்கள் அதிகாரப்பூர்வ பயன்பாட்டைப் பதிவிறக்கவும். Android மற்றும் iOS இரண்டிலும் கிடைக்கிறது.
           </p>
           
           <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">

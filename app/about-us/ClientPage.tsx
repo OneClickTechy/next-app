@@ -131,26 +131,26 @@ export default function AboutClientPage() {
       <section className="py-32 bg-[#f0ede4]">
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="text-center max-w-3xl mx-auto mb-24 au-fade-up">
-            <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">How we earn your trust</span>
-            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b]">See every step. <br/><em>Ask every question.</em></h2>
-            <p className="mt-6 text-[#77776f] text-lg">No hidden process. Our team explains what we are checking and what the result means.</p>
+            <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">How we earn your trust (உங்கள் நம்பிக்கையை நாங்கள் எவ்வாறு பெறுகிறோம்)</span>
+            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b]">See every step. <br/><em>Ask every question.</em><br/><span className="text-[clamp(1.5rem,3vw,2.5rem)] text-[#77776f] mt-4 block">ஒவ்வொரு படியையும் பாருங்கள். ஒவ்வொரு கேள்வியையும் கேளுங்கள்.</span></h2>
+            <p className="mt-6 text-[#77776f] text-lg">No hidden process. Our team explains what we are checking and what the result means.<br/><span className="block mt-2">மறைக்கப்பட்ட செயல்முறை இல்லை. நாங்கள் என்ன சரிபார்க்கிறோம் மற்றும் முடிவின் அர்த்தம் என்ன என்பதை எங்கள் குழு விளக்குகிறது.</span></p>
           </div>
 
           <div className="au-values-grid grid md:grid-cols-3 gap-8">
             <div className="au-value-card bg-white p-12 rounded-t-full border border-black/5 flex flex-col items-center text-center shadow-lg">
               <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#fbfaf6] text-[#790019] mb-8 shadow-inner"><Eye size={32} strokeWidth={1.5} /></span>
-              <h3 className="text-2xl font-medium text-[#30000b] mb-4">In plain sight</h3>
-              <p className="text-[#77776f] leading-relaxed">Evaluation takes place in a secure cabin, with your jewellery kept in view and cameras providing added visibility.</p>
+              <h3 className="text-2xl font-medium text-[#30000b] mb-4">In plain sight<br/><span className="text-lg text-[#77776f] block mt-1">(கண் முன்னே)</span></h3>
+              <p className="text-[#77776f] leading-relaxed">Evaluation takes place in a secure cabin, with your jewellery kept in view and cameras providing added visibility.<br/><span className="block mt-2">மதிப்பீடு ஒரு பாதுகாப்பான அறையில் நடைபெறுகிறது, உங்கள் நகைகள் உங்கள் பார்வையில் இருக்கும்படி வைக்கப்படுகின்றன.</span></p>
             </div>
             <div className="au-value-card bg-[#30000b] text-white p-12 rounded-t-full flex flex-col items-center text-center shadow-lg mt-0 md:mt-12">
               <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white/10 text-[#f4bf2f] mb-8 shadow-inner"><Scale size={32} strokeWidth={1.5} /></span>
-              <h3 className="text-2xl font-medium mb-4">Precision assessment</h3>
-              <p className="text-white/70 leading-relaxed">Our team uses advanced German XRF laser technology to test your gold with zero damage, right in front of you.</p>
+              <h3 className="text-2xl font-medium mb-4">Precision assessment<br/><span className="text-lg text-white/70 block mt-1">(துல்லியமான மதிப்பீடு)</span></h3>
+              <p className="text-white/70 leading-relaxed">Our team uses advanced German XRF laser technology to test your gold with zero damage, right in front of you.<br/><span className="block mt-2">உங்கள் தங்கத்தை சேதமின்றி, உங்கள் கண் முன்னே சோதிக்க எங்கள் குழு மேம்பட்ட ஜெர்மன் XRF லேசர் தொழில்நுட்பத்தைப் பயன்படுத்துகிறது.</span></p>
             </div>
             <div className="au-value-card bg-white p-12 rounded-t-full border border-black/5 flex flex-col items-center text-center shadow-lg mt-0 md:mt-24">
               <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#fbfaf6] text-[#790019] mb-8 shadow-inner"><ShieldCheck size={32} strokeWidth={1.5} /></span>
-              <h3 className="text-2xl font-medium text-[#30000b] mb-4">Your decision</h3>
-              <p className="text-[#77776f] leading-relaxed">We present the offer clearly. You are free to ask questions and decide whether to accept, without pressure.</p>
+              <h3 className="text-2xl font-medium text-[#30000b] mb-4">Your decision<br/><span className="text-lg text-[#77776f] block mt-1">(உங்கள் முடிவு)</span></h3>
+              <p className="text-[#77776f] leading-relaxed">We present the offer clearly. You are free to ask questions and decide whether to accept, without pressure.<br/><span className="block mt-2">நாங்கள் சலுகையை தெளிவாக முன்வைக்கிறோம். நீங்கள் கேள்விகளைக் கேட்கவும், எந்த அழுத்தமுமின்றி ஏற்கலாமா என்று முடிவு செய்யவும் உங்களுக்கு சுதந்திரம் உள்ளது.</span></p>
             </div>
           </div>
         </div>
@@ -161,22 +161,38 @@ export default function AboutClientPage() {
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="grid lg:grid-cols-[1fr_0.8fr] gap-16 items-center">
             <div className="au-fade-up order-2 lg:order-1">
-              <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Our commitment</span>
+              <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Our commitment (எங்கள் அர்ப்பணிப்பு)</span>
               <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[0.9] text-[#30000b] mb-8">
-                Market-aware rates, <br/><em>explained with honesty.</em>
+                Market-aware rates, <br/><em>explained with honesty.</em><br/>
+                <span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#77776f] mt-4 block leading-tight">
+                  சந்தை-விழிப்புணர்வு விலைகள், நேர்மையுடன் விளக்கப்படுகின்றன.
+                </span>
               </h2>
               <p className="text-[#77776f] text-lg leading-relaxed mb-10">
                 Gold prices move with the market, and the final value depends on your item's weight and purity. We walk through the assessment and offer so you know how we arrived at it.
+                <br/><span className="block mt-2">தங்கத்தின் விலை சந்தையுடன் நகர்கிறது, மேலும் இறுதி மதிப்பு உங்கள் பொருளின் எடை மற்றும் தூய்மையைப் பொறுத்தது. நாங்கள் மதிப்பீடு மற்றும் சலுகையை விளக்குகிறோம்.</span>
               </p>
               <ul className="space-y-6">
-                <li className="flex items-center gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
-                  <Check size={20} className="text-[#790019]" /> Respectful service, whatever you decide
+                <li className="flex items-start gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
+                  <Check size={20} className="text-[#790019] mt-1 shrink-0" />
+                  <div>
+                    Respectful service, whatever you decide <br/>
+                    <span className="text-base text-[#77776f] mt-1 block">மரியாதையான சேவை, நீங்கள் என்ன முடிவு செய்தாலும்</span>
+                  </div>
                 </li>
-                <li className="flex items-center gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
-                  <Check size={20} className="text-[#790019]" /> Secure cabins and a visible assessment
+                <li className="flex items-start gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
+                  <Check size={20} className="text-[#790019] mt-1 shrink-0" />
+                  <div>
+                    Secure cabins and a visible assessment <br/>
+                    <span className="text-base text-[#77776f] mt-1 block">பாதுகாப்பான அறைகள் மற்றும் வெளிப்படையான மதிப்பீடு</span>
+                  </div>
                 </li>
-                <li className="flex items-center gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
-                  <Check size={20} className="text-[#790019]" /> Clear explanation before any transaction
+                <li className="flex items-start gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
+                  <Check size={20} className="text-[#790019] mt-1 shrink-0" />
+                  <div>
+                    Clear explanation before any transaction <br/>
+                    <span className="text-base text-[#77776f] mt-1 block">எந்தவொரு பரிவர்த்தனைக்கும் முன் தெளிவான விளக்கம்</span>
+                  </div>
                 </li>
               </ul>
             </div>

@@ -376,9 +376,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
   display: inline-flex; align-items: center; gap: 0.6rem;
   color: rgba(248, 246, 240, 0.9);
   font-size: 0.76rem; font-weight: 600; letter-spacing: 0.02em;
-  transition: color 250ms ease, gap 250ms ease;
+  transition: color 250ms ease;
 }
-.hero-text-link:hover, .trust-link:hover { color: var(--gold-light); gap: 0.9rem; }
+.hero-text-link svg, .trust-link svg {
+  transition: transform 250ms ease;
+}
+.hero-text-link:hover, .trust-link:hover { color: var(--gold-light); }
+.hero-text-link:hover svg, .trust-link:hover svg {
+  transform: translateX(4px);
+}
 
 /* ── Visual (gem-cut photo) ── */
 .hero-visual {
@@ -774,9 +780,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .intro-side-note { min-height: auto; flex-direction: row; align-items: center; }
   .services-heading, .process-header { align-items: flex-start; flex-direction: column; gap: 1.4rem; }
   .services-heading > p, .process-header > p { max-width: 480px; }
-  .editorial-service-1 { grid-column: span 6; }
-  .editorial-service-2 { grid-column: span 6; padding-top: 4rem; }
-  .editorial-service-3 { grid-column: 4 / span 6; padding-top: 1rem; }
+  .editorial-service-1, .editorial-service-3 { grid-column: span 6; padding-top: 0; }
+  .editorial-service-2, .editorial-service-4 { grid-column: span 6; padding-top: 4rem; }
   .trust-editorial { grid-template-columns: 1fr; }
   .trust-image-wrap { min-height: 60vw; max-height: 650px; }
   .trust-content { padding: 5rem max(1.5rem, calc((100vw - 680px) / 2)); }
@@ -816,8 +821,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .round-link { width: 46px; height: 46px; }
   .services-heading { margin-bottom: 2.8rem; }
   .service-editorial-grid { grid-template-columns: minmax(0, 1fr); gap: 2.1rem; }
-  .editorial-service-1, .editorial-service-2, .editorial-service-3 { grid-column: 1; width: 100%; padding-top: 0; }
-  .editorial-service-image, .editorial-service-2 .editorial-service-image, .editorial-service-3 .editorial-service-image { aspect-ratio: 1.08; }
+  .editorial-service-1, .editorial-service-2, .editorial-service-3, .editorial-service-4 { grid-column: 1; width: 100%; padding-top: 0; }
+  .editorial-service-image, .editorial-service-2 .editorial-service-image, .editorial-service-3 .editorial-service-image, .editorial-service-4 .editorial-service-image { aspect-ratio: 1.08; }
   .editorial-service-label { font-size: 1.25rem; line-height: 1; }
   .editorial-service-meta { align-items: flex-start; gap: .5rem; }
   .editorial-service-icon { width: 26px; height: 26px; flex: none; }

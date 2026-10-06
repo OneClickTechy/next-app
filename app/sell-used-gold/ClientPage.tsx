@@ -104,7 +104,7 @@ export default function SellUsedGoldClientPage() {
       <section id="how-it-works" className="sug-sticky-wrap relative w-full border-t border-black/10">
         <div className="grid lg:grid-cols-2">
           {/* Left: Sticky Visual */}
-          <div className="hidden lg:block sug-sticky-image h-screen relative bg-[#30000b] overflow-hidden">
+          <div className="hidden lg:block sug-sticky-image h-[100svh] min-h-[600px] relative bg-[#30000b] overflow-hidden">
             <Image 
               src="/assets/images/cash-for-gold-1.jpg" 
               alt="Precision testing of gold" 
@@ -173,7 +173,7 @@ export default function SellUsedGoldClientPage() {
       </section>
 
       {/* Horizontal Scroll Visualization for Gold Purity */}
-      <section className="sug-hz-container bg-[#1a1a1a] h-screen overflow-hidden flex items-center relative">
+      <section className="sug-hz-container bg-[#1a1a1a] h-[100svh] min-h-[450px] overflow-hidden flex items-center relative">
         <div className="absolute top-10 left-10 lg:top-16 lg:left-16 z-10">
           <span className="text-white/50 text-[0.75rem] font-bold tracking-[0.2em] uppercase">Understanding Purity</span>
         </div>
