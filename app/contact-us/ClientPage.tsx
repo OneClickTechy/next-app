@@ -47,7 +47,7 @@ export default function ContactClientPage() {
         <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
           We are here to help
         </span>
-        <h1 className="cu-hero-title display-font text-[#30000b] text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-medium tracking-tight mb-8">
+        <h1 className="cu-hero-title display-font text-[#30000b] text-[clamp(4rem,8vw,8rem)] leading-[1.05] font-medium mb-8">
           Let&apos;s talk <em className="text-[#77776f]">gold.</em>
         </h1>
         <p className="cu-hero-copy text-[#77776f] text-[1.2rem] leading-relaxed max-w-2xl mx-auto mb-20">
@@ -104,7 +104,7 @@ export default function ContactClientPage() {
             {/* Form */}
             <div className="cu-fade-up">
               <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Send an enquiry</span>
-              <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[0.9] text-[#30000b] mb-6">How can we help?</h2>
+              <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[1.08] text-[#30000b] mb-6">How can we help?</h2>
               <p className="text-[#77776f] text-lg leading-relaxed mb-10">
                 Share a few details about what you're looking for, and our team will get back to you promptly.
               </p>

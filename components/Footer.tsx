@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
         <div className="mb-14 grid gap-12 border-b border-white/10 pb-14 md:grid-cols-[1.1fr_0.8fr_1.3fr]">
           <div data-reveal>
-            <a href="/" className="display-font text-2xl font-extrabold tracking-tight">MG<span className="text-[#f4bf2f]">.</span> GOLD MART</a>
+            <a href="/" className="display-font text-2xl font-extrabold tracking-normal">MG<span className="text-[#f4bf2f]">.</span> GOLD MART</a>
             <p className="mt-5 max-w-sm text-sm leading-7 text-white/55">A more considered way to sell gold. Honest valuation, clear choices and personal service in the heart of Coimbatore.</p>
             <a href={`tel:${site.phone}`} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#f4bf2f] hover:text-white">Speak with our team <ArrowUpRight size={15} /></a>
           </div>

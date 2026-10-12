@@ -89,7 +89,7 @@ export default function ReleasePledgedGoldClientPage() {
           <span className="rpg-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
             Gold Loan Rescue
           </span>
-          <h1 className="rpg-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[0.9] font-medium mb-8">
+          <h1 className="rpg-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[1.05] font-medium mb-8">
             Stop paying <br/><em>high interest.</em>
           </h1>
           <p className="rpg-hero-copy text-[#77776f] text-[1.2rem] leading-relaxed mb-10">
@@ -108,7 +108,7 @@ export default function ReleasePledgedGoldClientPage() {
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="rpg-fade-up">
-              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[0.9] mb-8">The hidden cost of <br/><em className="text-[#f4bf2f]">gold loans.</em></h2>
+              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[1.08] mb-8">The hidden cost of <br/><em className="text-[#f4bf2f]">gold loans.</em></h2>
               <p className="text-white/70 text-lg leading-relaxed mb-8">
                 Most people pledge their gold expecting to release it in a few months. But as compounding interest piles up, the loan amount eventually exceeds the value of the gold itself, leading to auction and total loss of your asset.
               </p>
@@ -152,7 +152,7 @@ export default function ReleasePledgedGoldClientPage() {
       <section className="py-32 bg-[#f0ede4]">
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16 text-center">
           <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6 rpg-fade-up">The Rescue Process</span>
-          <h2 className="display-font text-[#30000b] text-[clamp(2.5rem,4vw,4rem)] leading-[0.9] mb-20 rpg-fade-up">We pay the bank. <br/><em>You get the balance.</em></h2>
+          <h2 className="display-font text-[#30000b] text-[clamp(2.5rem,4vw,4rem)] leading-[1.08] mb-20 rpg-fade-up">We pay the bank. <br/><em>You get the balance.</em></h2>
 
           {/* Animated Diagram */}
           <div className="rpg-diagram-container relative max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0">

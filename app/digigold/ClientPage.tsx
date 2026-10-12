@@ -43,7 +43,7 @@ export default function DigiGoldClientPage() {
         <span className="dg-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
           The future of gold
         </span>
-        <h1 className="dg-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[0.9] font-medium tracking-tight mb-8 max-w-4xl">
+        <h1 className="dg-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[1.05] font-medium mb-8 max-w-4xl">
           Gold investment, <br />
           <em className="text-[#77776f]">simplified.</em>
         </h1>
@@ -77,7 +77,7 @@ export default function DigiGoldClientPage() {
       <section className="py-24 bg-white rounded-t-[3rem] lg:rounded-t-[5rem] px-5 sm:px-10 lg:px-16">
         <div className="max-w-[1400px] mx-auto">
           <div className="dg-fade-up text-center mb-16">
-            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[0.9] text-[#30000b] mb-6">Why MG DigiGold?</h2>
+            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[1.08] text-[#30000b] mb-6">Why MG DigiGold?</h2>
             <p className="text-[#77776f] text-lg max-w-2xl mx-auto">Modern wealth management meets traditional trust. Your gold is stored in secure, insured vaults.</p>
           </div>
 

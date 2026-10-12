@@ -53,7 +53,7 @@ export default function GoldCalculatorClientPage() {
           <span className="gc-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#f4bf2f] uppercase mb-8">
             Live Market Tool (நேரடி சந்தை கருவி)
           </span>
-          <h1 className="gc-hero-title display-font text-white text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-medium tracking-tight mb-8">
+          <h1 className="gc-hero-title display-font text-white text-[clamp(4rem,8vw,8rem)] leading-[1.05] font-medium mb-8">
             Valuation. <br />
             <em className="text-white/50">Demystified.</em><br/>
             <span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#f4bf2f]/70 mt-4 block leading-tight">
@@ -86,7 +86,7 @@ export default function GoldCalculatorClientPage() {
         <div className="max-w-[1400px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="text-center max-w-3xl mx-auto mb-20 gc-fade-up">
             <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">The Formula (சூத்திரம்)</span>
-            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[0.9] mb-6">How we calculate<br/><span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#77776f] mt-4 block leading-tight">நாங்கள் எவ்வாறு கணக்கிடுகிறோம்</span></h2>
+            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[1.08] mb-6">How we calculate<br/><span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#77776f] mt-4 block leading-tight">நாங்கள் எவ்வாறு கணக்கிடுகிறோம்</span></h2>
             <p className="text-[#77776f] text-lg leading-relaxed">
               Our valuation is strictly data-driven. We multiply the verified weight of your gold by its purity percentage, and apply the exact live market rate.
               <br/><br/>எங்கள் மதிப்பீடு தரவுகளை மட்டுமே அடிப்படையாகக் கொண்டது. உங்கள் தங்கத்தின் எடையை அதன் தூய்மை சதவீதத்தால் பெருக்கி, சரியான நேரடி சந்தை விலையைப் பயன்படுத்துகிறோம்.

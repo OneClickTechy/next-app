@@ -27,7 +27,7 @@ export default function TermsClientPage() {
           <span className="policy-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
             Legal
           </span>
-          <h1 className="policy-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[0.85] font-medium tracking-tight mb-8">
+          <h1 className="policy-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,7rem)] leading-[1.05] font-medium mb-8">
             Terms & <br />
             <em className="text-[#77776f]">Conditions</em>
           </h1>

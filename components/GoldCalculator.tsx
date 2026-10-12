@@ -44,7 +44,7 @@ export default function GoldCalculator() {
           <div className="p-10 md:p-14 lg:p-16 bg-[#30000b] text-white flex flex-col justify-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#f4bf2f]/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
             <span className="eyebrow !text-[#f4bf2f] mb-6 tracking-widest">Interactive Tool</span>
-            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[0.9] mb-8 font-medium">Estimate Your <br/><em>Gold&apos;s Value</em></h2>
+            <h2 className="display-font text-[clamp(2.5rem,4vw,3.5rem)] leading-[1.08] mb-8 font-medium">Estimate Your <br/><em>Gold&apos;s Value</em></h2>
             <p className="text-white/70 leading-relaxed mb-10 max-w-sm text-[0.92rem]">
               Use our live-rate calculator to get a clear estimate. The final valuation is based on a precise XRF laser test in our Coimbatore lounge, with zero melting deductions.
             </p>

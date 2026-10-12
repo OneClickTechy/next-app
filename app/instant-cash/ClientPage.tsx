@@ -67,7 +67,7 @@ export default function InstantCashClientPage() {
             <span className="ic-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
               Immediate Liquidity
             </span>
-            <h1 className="ic-hero-title display-font text-[#30000b] text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-medium tracking-tight mb-8">
+            <h1 className="ic-hero-title display-font text-[#30000b] text-[clamp(4rem,8vw,8rem)] leading-[1.05] font-medium mb-8">
               Instant cash. <br />
               <em className="text-[#77776f]">Zero delay.</em>
             </h1>
@@ -99,7 +99,7 @@ export default function InstantCashClientPage() {
       <section id="express-process" className="py-24 bg-white rounded-t-[3rem] lg:rounded-t-[5rem] -mt-10 relative z-20">
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="text-center max-w-3xl mx-auto mb-20 ic-fade-up">
-            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b] mb-6">The Express Process</h2>
+            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.08] text-[#30000b] mb-6">The Express Process</h2>
             <p className="text-[#77776f] text-lg">We&apos;ve streamlined gold selling to respect your time while maintaining 100% accuracy.</p>
           </div>
 
@@ -131,7 +131,7 @@ export default function InstantCashClientPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="ic-fade-up">
               <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#f4bf2f] uppercase mb-6">Why MG Gold Mart?</span>
-              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[0.9] mb-8">Better than <br/><em>banks & pawnbrokers.</em></h2>
+              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[1.08] mb-8">Better than <br/><em>banks & pawnbrokers.</em></h2>
               <p className="text-white/70 text-lg leading-relaxed mb-8">
                 Traditional lending sources often involve lengthy paperwork, hidden fees, and low valuations. We offer the exact opposite: maximum value, instant payout, and zero hidden deductions.
               </p>
@@ -169,7 +169,7 @@ export default function InstantCashClientPage() {
         <div className="max-w-[1320px] mx-auto px-5">
           <div className="text-center max-w-3xl mx-auto mb-20 ic-fade-up">
             <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Estimate Your Cash</span>
-            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b]">Check today&apos;s value.</h2>
+            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.08] text-[#30000b]">Check today&apos;s value.</h2>
           </div>
           <div className="ic-fade-up">
             <GoldCalculator />

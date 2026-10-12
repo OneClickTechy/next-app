@@ -35,7 +35,7 @@ export default function FAQSection() {
       <div className="max-w-[1320px] mx-auto grid lg:grid-cols-[0.8fr_1fr] gap-16 lg:gap-24">
         <div data-reveal>
           <span className="eyebrow">Common Questions (பொதுவான கேள்விகள்)</span>
-          <h2 className="display-font mt-6 text-[clamp(2.8rem,5vw,4.5rem)] leading-[0.9] font-medium tracking-tight text-[#30000b] mb-8">
+          <h2 className="display-font mt-6 text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.08] font-medium text-[#30000b] mb-8">
             Clarity before <br/><em>you sell.</em><br/>
             <span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#77776f] mt-4 block leading-tight">
               நீங்கள் விற்பதற்கு முன் தெளிவு.

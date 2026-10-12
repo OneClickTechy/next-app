@@ -30,7 +30,7 @@ export default function ServicePage({ eyebrow, title, intro, image, imageAlt, po
           </div>
           <div data-reveal className="intro-copy py-10 lg:py-0">
             <span className="eyebrow">A better way to sell</span>
-            <h2 className="display-font mt-6 text-[clamp(2.8rem,5vw,5rem)] leading-[0.9] font-medium tracking-tight text-[#30000b] mb-8">
+            <h2 className="display-font mt-6 text-[clamp(2.8rem,5vw,5rem)] leading-[1.08] font-medium text-[#30000b] mb-8">
               {title.split(' ').slice(0, -1).join(' ')} <br/><em>{title.split(' ').slice(-1)}</em>
             </h2>
             <p className="text-[#77776f] text-[1.05rem] leading-relaxed max-w-md mb-10">{intro}</p>

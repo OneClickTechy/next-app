@@ -74,10 +74,10 @@ export default function SellUsedGoldClientPage() {
             <span className="sug-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
               Spot cash for gold
             </span>
-            <h1 className="display-font text-[#30000b] text-[clamp(3.5rem,7vw,7.5rem)] leading-[0.85] font-medium tracking-tight mb-8">
+            <h1 className="display-font text-[#30000b] text-[clamp(3.5rem,7vw,7.5rem)] leading-[1.05] font-medium mb-8">
               <span className="inline-block sug-hero-title mr-4">Your gold,</span>
               <span className="inline-block sug-hero-title mr-4">valued</span>
-              <span className="inline-block sug-hero-title"><em>with respect.</em></span>
+              <span className="inline-block sug-hero-title pr-2"><em>with respect.</em></span>
             </h1>
             <p className="sug-hero-copy text-[#77776f] text-[1.1rem] leading-relaxed max-w-md">
               Whether it’s old, broken, mismatched, or simply no longer your style — your gold still holds intrinsic value. We offer a transparent assessment you can watch from start to finish.
@@ -113,7 +113,7 @@ export default function SellUsedGoldClientPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#30000b] via-transparent to-transparent opacity-80" />
             <div className="absolute bottom-12 left-12 max-w-sm">
-              <h3 className="display-font text-white text-[2.5rem] leading-[0.9]">Transparency <br/><em>in plain sight.</em></h3>
+              <h3 className="display-font text-white text-[2.5rem] leading-[1.08]">Transparency <br/><em>in plain sight.</em></h3>
               <p className="mt-4 text-white/70">We believe you have the right to see exactly how your gold is tested.</p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function SellUsedGoldClientPage() {
         <div className="max-w-[1320px] mx-auto px-5">
           <div className="text-center max-w-3xl mx-auto mb-20 sug-fade-up">
             <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Live Assessment</span>
-            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b]">Calculate your <br/><em>estimated return.</em></h2>
+            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.08] text-[#30000b]">Calculate your <br/><em>estimated return.</em></h2>
             <p className="mt-6 text-[#77776f] text-lg">Use our live-market calculator to get an idea of what your gold might be worth today. Final value is determined after our in-store XRF assessment.</p>
           </div>
           <div className="sug-fade-up">

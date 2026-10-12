@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { Eye, Scale, ShieldCheck, Check, Camera } from "lucide-react";
+import { Eye, Scale, ShieldCheck, Check, Camera, Award } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -84,15 +84,16 @@ export default function AboutClientPage() {
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center z-10">
           <div>
             <span className="au-hero-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
-              A promise you can see
+              20+ Years of Gold Expertise · Coimbatore (20+ ஆண்டுகள் அனுபவம்)
             </span>
-            <h1 className="au-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,8rem)] leading-[0.85] font-medium tracking-tight mb-8">
+            <h1 className="au-hero-title display-font text-[#30000b] text-[clamp(3.5rem,7vw,8rem)] leading-[1.05] font-medium mb-8">
               <span className="inline-block mr-4">Trust is</span>
               <span className="inline-block mr-4">built in the</span>
-              <span className="inline-block"><em>details.</em></span>
+              <span className="inline-block pr-2"><em>details.</em></span>
             </h1>
             <p className="au-hero-copy text-[#77776f] text-[1.2rem] leading-relaxed max-w-md">
-              Honest conversations, transparent evaluation, and thoughtful service for every customer in Coimbatore. We redefine what it means to sell your gold.
+              Backed by <strong>20+ years of trusted experience</strong> in the gold industry, we bring seasoned knowledge, transparent live evaluation, and personal service to every customer in Coimbatore.
+              <span className="block mt-3 text-base text-[#918a78]">தங்கத் துறையில் 20+ ஆண்டுகளுக்கும் மேலான அனுபவத்துடன், நேர்மையான மதிப்பீடு மற்றும் நம்பகமான சேவை.</span>
             </p>
           </div>
           <div className="relative h-[60vh] lg:h-[85vh] w-full bg-[#30000b] au-hero-img">
@@ -104,9 +105,43 @@ export default function AboutClientPage() {
               className="object-cover object-center opacity-90" 
               priority
             />
-            <div className="absolute left-0 bottom-10 bg-white px-8 py-6 max-w-xs shadow-2xl">
-              <p className="font-serif text-[#30000b] text-xl leading-snug">"We aim to make every visit safe, calm and straightforward."</p>
+            <div className="absolute left-0 bottom-8 bg-white p-6 sm:p-7 max-w-xs shadow-2xl border-l-4 border-[#f4bf2f]">
+              <div className="flex items-center gap-3 mb-2">
+                <Award className="text-[#790019] shrink-0" size={28} />
+                <div>
+                  <span className="display-font text-2xl font-bold text-[#790019] leading-none block">20+ Years</span>
+                  <span className="text-[10px] uppercase tracking-widest font-bold text-[#30000b]/60">Experience in Field</span>
+                </div>
+              </div>
+              <p className="font-serif text-[#30000b] text-base leading-snug">&quot;Two decades of precision testing, honest valuations, and trusted service.&quot;</p>
+              <span className="text-[11px] text-[#77776f] block mt-1">(துறையில் 20+ ஆண்டுகள் அனுபவம்)</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 20+ Years Experience Highlight Strip */}
+      <section className="bg-white border-y border-black/5 py-12 px-5 sm:px-10 lg:px-16">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 au-fade-up">
+          <div className="border-l-2 border-[#f4bf2f] pl-6">
+            <span className="display-font text-4xl sm:text-5xl font-bold text-[#790019] block">20+</span>
+            <span className="text-sm font-bold uppercase tracking-wider text-[#30000b] mt-1 block">Years of Experience</span>
+            <span className="text-xs text-[#77776f] mt-0.5 block">20+ ஆண்டுகள் தொழில் அனுபவம்</span>
+          </div>
+          <div className="border-l-2 border-[#f4bf2f] pl-6">
+            <span className="display-font text-4xl sm:text-5xl font-bold text-[#790019] block">10,500+</span>
+            <span className="text-sm font-bold uppercase tracking-wider text-[#30000b] mt-1 block">Satisfied Customers</span>
+            <span className="text-xs text-[#77776f] mt-0.5 block">திருப்திகரமான வாடிக்கையாளர்கள்</span>
+          </div>
+          <div className="border-l-2 border-[#f4bf2f] pl-6">
+            <span className="display-font text-4xl sm:text-5xl font-bold text-[#790019] block">11</span>
+            <span className="text-sm font-bold uppercase tracking-wider text-[#30000b] mt-1 block">Branch Outlets</span>
+            <span className="text-xs text-[#77776f] mt-0.5 block">கோயம்புத்தூரில் கிளைகள்</span>
+          </div>
+          <div className="border-l-2 border-[#f4bf2f] pl-6">
+            <span className="display-font text-4xl sm:text-5xl font-bold text-[#790019] block">100%</span>
+            <span className="text-sm font-bold uppercase tracking-wider text-[#30000b] mt-1 block">XRF Precision Testing</span>
+            <span className="text-xs text-[#77776f] mt-0.5 block">0% சேத கழித்தல் & உடனடி பணம்</span>
           </div>
         </div>
       </section>
@@ -114,15 +149,15 @@ export default function AboutClientPage() {
       {/* Manifesto Section */}
       <section className="py-32 bg-[#30000b] text-white">
         <div className="max-w-[1000px] mx-auto px-5 sm:px-10 text-center lg:text-left">
+          <span className="text-[#f4bf2f] text-xs font-bold tracking-[0.25em] uppercase mb-6 inline-block">Two Decades of Excellence</span>
           <h2 className="display-font text-[clamp(2rem,4vw,4rem)] leading-[1.2] font-medium">
-            <div className="au-manifesto-line">At MG Gold Mart,</div>
-            <div className="au-manifesto-line">we believe a good valuation</div>
+            <div className="au-manifesto-line">Backed by 20+ years in the gold field,</div>
+            <div className="au-manifesto-line">we know true value</div>
             <div className="au-manifesto-line"><em className="text-[#f4bf2f]">begins with respect.</em></div>
-            <div className="au-manifesto-line">We listen to what you need,</div>
-            <div className="au-manifesto-line">take care with your jewellery,</div>
-            <div className="au-manifesto-line">and explain the process</div>
-            <div className="au-manifesto-line">so you can make an</div>
-            <div className="au-manifesto-line"><em className="text-[#f4bf2f]">informed choice.</em></div>
+            <div className="au-manifesto-line">Two decades of listening,</div>
+            <div className="au-manifesto-line">handling your jewellery with care,</div>
+            <div className="au-manifesto-line">and guiding you to make</div>
+            <div className="au-manifesto-line"><em className="text-[#f4bf2f]">an informed choice.</em></div>
           </h2>
         </div>
       </section>
@@ -132,7 +167,7 @@ export default function AboutClientPage() {
         <div className="max-w-[1320px] mx-auto px-5 sm:px-10 lg:px-16">
           <div className="text-center max-w-3xl mx-auto mb-24 au-fade-up">
             <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">How we earn your trust (உங்கள் நம்பிக்கையை நாங்கள் எவ்வாறு பெறுகிறோம்)</span>
-            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] text-[#30000b]">See every step. <br/><em>Ask every question.</em><br/><span className="text-[clamp(1.5rem,3vw,2.5rem)] text-[#77776f] mt-4 block">ஒவ்வொரு படியையும் பாருங்கள். ஒவ்வொரு கேள்வியையும் கேளுங்கள்.</span></h2>
+            <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.08] text-[#30000b]">See every step. <br/><em>Ask every question.</em><br/><span className="text-[clamp(1.5rem,3vw,2.5rem)] text-[#77776f] mt-4 block">ஒவ்வொரு படியையும் பாருங்கள். ஒவ்வொரு கேள்வியையும் கேளுங்கள்.</span></h2>
             <p className="mt-6 text-[#77776f] text-lg">No hidden process. Our team explains what we are checking and what the result means.<br/><span className="block mt-2">மறைக்கப்பட்ட செயல்முறை இல்லை. நாங்கள் என்ன சரிபார்க்கிறோம் மற்றும் முடிவின் அர்த்தம் என்ன என்பதை எங்கள் குழு விளக்குகிறது.</span></p>
           </div>
 
@@ -162,17 +197,24 @@ export default function AboutClientPage() {
           <div className="grid lg:grid-cols-[1fr_0.8fr] gap-16 items-center">
             <div className="au-fade-up order-2 lg:order-1">
               <span className="inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-6">Our commitment (எங்கள் அர்ப்பணிப்பு)</span>
-              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[0.9] text-[#30000b] mb-8">
+              <h2 className="display-font text-[clamp(2.5rem,4vw,4rem)] leading-[1.08] text-[#30000b] mb-8">
                 Market-aware rates, <br/><em>explained with honesty.</em><br/>
                 <span className="text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#77776f] mt-4 block leading-tight">
                   சந்தை-விழிப்புணர்வு விலைகள், நேர்மையுடன் விளக்கப்படுகின்றன.
                 </span>
               </h2>
               <p className="text-[#77776f] text-lg leading-relaxed mb-10">
-                Gold prices move with the market, and the final value depends on your item's weight and purity. We walk through the assessment and offer so you know how we arrived at it.
-                <br/><span className="block mt-2">தங்கத்தின் விலை சந்தையுடன் நகர்கிறது, மேலும் இறுதி மதிப்பு உங்கள் பொருளின் எடை மற்றும் தூய்மையைப் பொறுத்தது. நாங்கள் மதிப்பீடு மற்றும் சலுகையை விளக்குகிறோம்.</span>
+                With 20+ years of dedicated expertise in the gold trade, we understand the nuances of gold purity, market trends, and pledged loans. We walk through the assessment and offer so you know how we arrived at every rupee.
+                <br/><span className="block mt-2">தங்கத் துறையில் 20+ ஆண்டுகளுக்கும் மேலான அனுபவத்துடன், தூய்மை மதிப்பீடு மற்றும் சந்தை விலைகளை நாங்கள் தெளிவாக விளக்குகிறோம்.</span>
               </p>
               <ul className="space-y-6">
+                <li className="flex items-start gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
+                  <Check size={20} className="text-[#790019] mt-1 shrink-0" />
+                  <div>
+                    20+ years of gold industry mastery & trust <br/>
+                    <span className="text-base text-[#77776f] mt-1 block">தங்கத் துறையில் 20+ ஆண்டுகள் அனுபவம் மற்றும் நம்பகமான சேவை</span>
+                  </div>
+                </li>
                 <li className="flex items-start gap-4 text-lg text-[#30000b] border-b border-black/5 pb-4">
                   <Check size={20} className="text-[#790019] mt-1 shrink-0" />
                   <div>

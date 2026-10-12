@@ -77,7 +77,7 @@ export default function GalleryClientPage() {
         <span className="gallery-kicker inline-block text-[0.75rem] font-bold tracking-[0.2em] text-[#790019] uppercase mb-8">
           The Workspace
         </span>
-        <h1 className="gallery-title display-font text-[clamp(3.5rem,7vw,7rem)] leading-[0.85] mb-8">
+        <h1 className="gallery-title display-font text-[clamp(3.5rem,7vw,7rem)] leading-[1.05] mb-8">
           Inside <br /> <span className="italic text-[#77776f]">MG Gold Mart</span>
         </h1>
         <p className="gallery-desc text-[#77776f] text-[1.1rem] md:text-[1.3rem] max-w-2xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ export default function GalleryClientPage() {
           {/* Subtle noise/texture overlay */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
           
-          <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9] mb-8 relative z-10">
+          <h2 className="display-font text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.08] mb-8 relative z-10">
             Experience it <br/> <em className="text-[#f4bf2f]">in person.</em>
           </h2>
           <p className="text-white/70 max-w-xl mx-auto mb-10 text-lg relative z-10">
