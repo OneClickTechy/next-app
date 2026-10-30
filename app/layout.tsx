@@ -9,6 +9,8 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import LocalBusinessJsonLd from "@/components/seo/JsonLd";
 import LiveGoldRate from "@/components/LiveGoldRate";
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 
 const siteUrl = "https://mggoldmart.com";
@@ -48,6 +50,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID!} />
       <body>
         <LocalBusinessJsonLd />
         <SmoothScrolling />
